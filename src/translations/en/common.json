@@ -1,0 +1,22 @@
+
+{
+  "save": "Save",
+  "cancel": "Cancel",
+  "delete": "Delete",
+  "edit": "Edit",
+  "add": "Add",
+  "back": "Back",
+  "next": "Next",
+  "search": "Search",
+  "loading": "Loading...",
+  "error": "Error",
+  "success": "Success",
+  "close": "Close",
+  "settings": "Settings",
+  "language": "Language",
+  "choose": "Choose",
+  "select": "Select",
+  "total": "Total",
+  "available": "Available",
+  "about": "About"
+}

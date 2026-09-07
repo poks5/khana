@@ -1,0 +1,323 @@
+
+{
+  "title": "Nutrition Recommendations",
+  "subtitle": "Comprehensive dietary guidance for dialysis patients",
+  "cultural_guide": {
+    "title": "Cultural Nutrition Guide",
+    "subtitle": "Nepali food adaptations and traditional meal guidance for dialysis patients",
+    "remember_title": "Remember: Cultural Food Safety",
+    "safe_foods": "Safe Traditional Foods: Chamal, dhindo, chiura, lauka, kakro, apples",
+    "use_carefully": "Use Carefully: Dal (small portions), tama (well-rinsed), oranges (half piece weekly)",
+    "avoid_completely": "Avoid Completely: Bananas, potatoes, amla, spinach, high-sodium pickles, alcohol",
+    "health_quote": "Your health is your greatest wealth. Adapt traditions to protect your kidneys.",
+    "tips": {
+      "dal_bhat_adaptations": {
+        "title": "Dal Bhat Adaptations for Dialysis",
+        "content": "Use smaller portions of dal (1/4 cup), choose low-potassium vegetables, and rinse rice before cooking. Add safe spices like cumin and coriander.",
+        "category": "Nepali Staples"
+      },
+      "safe_breakfast_options": {
+        "title": "Safe Traditional Breakfast Options",
+        "content": "Chiura (beaten rice) with small amounts of curd, sel roti in moderation, or dhindo made with buckwheat flour are good options.",
+        "category": "Traditional Meals"
+      },
+      "festival_food_modifications": {
+        "title": "Festival Food Modifications",
+        "content": "During festivals, choose white meat over red, limit sweets, avoid dried fruits and nuts. Focus on rice-based dishes.",
+        "category": "Cultural Events"
+      },
+      "newari_dish_modifications": {
+        "title": "Newari Dish Modifications",
+        "content": "Choose steamed momos over fried, limit achar portions, avoid alcohol, and opt for rice-based items like chatamari.",
+        "category": "Newari Dishes"
+      }
+    }
+  },
+  "smart_tips": {
+    "title": "Smart Nutrition Tips",
+    "subtitle": "Clinical condition-based dietary guidance for dialysis patients",
+    "all_tips": "All Tips",
+    "bookmarked_tips": "Bookmarked Tips",
+    "bookmarked_summary_single": "You have bookmarked 1 tip for easy reference.",
+    "bookmarked_summary_plural": "You have bookmarked {count} tips for easy reference.",
+    "search_placeholder": "Search tips...",
+    "priority": "Priority",
+    "tips_count": "tips",
+    "no_bookmarks": "No saved tips yet. Bookmark tips from the database.",
+    "recommended_foods": "Recommended Foods",
+    "foods_to_avoid": "Foods to Avoid"
+  },
+  "tarkari_guide": {
+    "title": "Tarkari Guide: Vegetables for Kidney Health",
+    "subtitle": "तरकारी गाइड: मिर्गौला स्वास्थ्यका लागि तरकारी छनोट र तयारी",
+    "tabs": {
+      "vegetables": "Vegetables",
+      "preparation": "Preparation Guide",
+      "safety": "Safety Guide"
+    },
+    "search_placeholder": "Search vegetables in English or Nepali... (तरकारी खोज्नुहोस्)",
+    "filters": {
+      "safety_level": "Safety Level:",
+      "potassium": "Potassium:",
+      "all_levels": "All Levels"
+    },
+    "safety": {
+      "safe": "✅ CKD Safe",
+      "caution": "⚠️ Use Caution",
+      "avoid": "❌ Avoid/Limit",
+      "all": "All Vegetables"
+    },
+    "no_results": {
+      "title": "No vegetables found",
+      "description": "Try adjusting your search terms or filters"
+    },
+    "safety_legend": {
+      "title": "Vegetable Safety Legend",
+      "subtitle": "Understanding vegetable safety levels for kidney patients",
+      "safe": {
+        "title": "Safe Vegetables (Daily Use)",
+        "description": "These vegetables are naturally low in potassium and can be consumed daily."
+      },
+      "caution": {
+        "title": "Use with Caution (Preparation Required)",
+        "description": "These vegetables require double-boiling and portion control."
+      },
+      "avoid": {
+        "title": "Avoid/Severely Limit",
+        "description": "These vegetables are too high in potassium for kidney patients."
+      }
+    }
+  },
+  "achar_guide": {
+    "title": "Achar Safety Guide",
+    "subtitle": "Safe pickle consumption for kidney patients",
+    "education": {
+      "title": "Understanding Achar Safety",
+      "subtitle": "Why certain pickles are dangerous for kidney patients",
+      "high_risk": {
+        "title": "High-Risk Ingredients"
+      },
+      "safe_practices": {
+        "title": "Safe Achar Practices"
+      }
+    }
+  },
+  "clinical_tips": {
+    "hyperkalemia": {
+      "title": "Hyperkalemia (High Potassium) Management",
+      "short_title": "High K+",
+      "description": "Low-potassium foods and cooking techniques to manage elevated potassium levels",
+      "tips": {
+        "k1": {
+          "title": "Low-Potassium Nepali Staples",
+          "content": "Choose white rice (चामल) over brown rice, refined wheat flour (मैदा) products, and white bread. These refined grains have significantly less potassium than whole grains."
+        },
+        "k2": {
+          "title": "Double-Boiling Technique for Vegetables",
+          "content": "Cut vegetables into small pieces, boil for 3-5 minutes, drain completely, then boil again in fresh water. This removes 30-50% of potassium. Perfect for preparing तरकारी (vegetables)."
+        },
+        "k3": {
+          "title": "Safe Fruits for High Potassium",
+          "content": "Choose apples (स्याउ), pears, berries, and grapes. Limit to 1-2 servings daily. Avoid bananas, oranges, and melons completely."
+        },
+        "k4": {
+          "title": "Protein Sources Low in Potassium",
+          "content": "Egg whites, fish, and chicken breast are excellent low-potassium protein sources. Limit red meat and avoid organ meats."
+        }
+      }
+    },
+    "hyperphosphatemia": {
+      "title": "Hyperphosphatemia (High Phosphorus) Management",
+      "short_title": "High PO₄",
+      "description": "Low-phosphorus diet strategies and phosphate binder timing",
+      "tips": {
+        "p1": {
+          "title": "Avoiding High-Phosphorus Foods",
+          "content": "Completely avoid organ meats, nuts, seeds, and dark colas. Limit dairy products including milk, yogurt, and cheese. Choose white bread over whole grain."
+        },
+        "p2": {
+          "title": "Phosphate Binder Timing",
+          "content": "Take phosphate binders with the first bite of every meal and snack containing protein. Never skip binders with dal, meat, or dairy products."
+        },
+        "p3": {
+          "title": "Safe Nepali Protein Alternatives",
+          "content": "Choose egg whites over whole eggs, fish over red meat, and limit dal to 1/4 cup per meal. Soak dal overnight and discard soaking water."
+        },
+        "p4": {
+          "title": "Reading Food Labels for Phosphorus",
+          "content": "Avoid processed foods with phosphorus additives (phosphoric acid, sodium phosphate). Choose fresh foods over packaged ones."
+        }
+      }
+    },
+    "combined": {
+      "title": "Combined Low Potassium + Low Phosphorus Diet",
+      "short_title": "Low K+ & PO₄",
+      "description": "Foods and strategies suitable for both potassium and phosphorus restrictions",
+      "tips": {
+        "c1": {
+          "title": "Double-Safe Food Choices",
+          "content": "Rice, cauliflower (double-boiled), cabbage, apples, and egg whites are safe for both restrictions. These should form the base of your diet."
+        },
+        "c2": {
+          "title": "Meal Planning Strategy",
+          "content": "Plan meals around safe carbs (rice, pasta), double-boiled vegetables, and limited high-quality protein. Take phosphate binders with every meal."
+        },
+        "c3": {
+          "title": "Traditional Nepali Adaptations",
+          "content": "Modify dal-bhat: use 1/4 cup dal (soaked overnight), double-boil vegetables, serve with white rice. Avoid traditional pickles and fermented foods."
+        }
+      }
+    },
+    "protein": {
+      "title": "Kidney-Safe Protein Sources (Low PO₄ & Low K)",
+      "short_title": "Safe Proteins",
+      "description": "High-quality protein options that are low in both phosphorus and potassium",
+      "tips": {
+        "pr1": {
+          "title": "Best Protein Choices for Dialysis",
+          "content": "Egg whites are the gold standard - complete protein with minimal phosphorus and potassium. Fish and chicken breast are excellent secondary choices."
+        },
+        "pr2": {
+          "title": "Portion Control for Protein",
+          "content": "Limit protein to 1.2g/kg body weight daily. For a 60kg person, this is about 70g protein total. Track portions carefully."
+        },
+        "pr3": {
+          "title": "Protein Timing with Phosphate Binders",
+          "content": "Always take phosphate binders with protein-containing meals. Time binders with the first bite of dal, meat, or egg dishes."
+        },
+        "pr4": {
+          "title": "Plant Protein Limitations",
+          "content": "Significantly limit dal, rajma, and other legumes due to high phosphorus and potassium. If consuming, soak overnight and use small portions (1/4 cup)."
+        }
+      }
+    },
+    "fluid": {
+      "title": "Fluid Overload Management",
+      "short_title": "Fluid Control",
+      "description": "Low-fluid content foods and hydration strategies for dialysis patients",
+      "tips": {
+        "f1": {
+          "title": "Hidden Fluid Sources to Avoid",
+          "content": "Avoid soups, dal with excess liquid, juicy fruits, ice cream, and yogurt drinks. These contribute significantly to fluid intake."
+        },
+        "f2": {
+          "title": "Dry Snack Alternatives",
+          "content": "Choose dry snacks like plain biscuits, roasted rice (भुजा), and small amounts of dry fruits. These provide nutrition without excess fluid."
+        },
+        "f3": {
+          "title": "Thirst Management Techniques",
+          "content": "Use ice chips, sugar-free gum, or lemon wedges to manage thirst. Rinse mouth without swallowing. Keep track of all fluid intake."
+        },
+        "f4": {
+          "title": "Cooking Methods to Reduce Fluid",
+          "content": "Steam vegetables instead of boiling, grill or roast meats, prepare thick dal rather than watery. Drain excess liquid from cooked foods."
+        }
+      }
+    },
+    "rice-guide": {
+      "title": "Smart Rice Choices for Kidney & Diabetes Patients",
+      "short_title": "Rice Guide",
+      "description": "Condition-specific rice selection and preparation guidelines",
+      "tips": {
+        "rice1": {
+          "title": "CKD (Non-Dialysis) Rice Recommendations",
+          "content": "Choose white rice varieties like Mota Chamal or Ukhuwa Chamal. Avoid brown, red, and black rice due to high potassium and phosphorus content. Limit portions to 150g cooked rice per meal."
+        },
+        "rice2": {
+          "title": "Dialysis Patient Rice Guidelines",
+          "content": "White rice varieties are safe with increased protein needs. Can consume 180-200g cooked rice per meal. Chiura (चिउरा) is excellent for fluid restriction."
+        },
+        "rice3": {
+          "title": "Diabetes-Friendly Rice Choices",
+          "content": "If kidney function is normal, choose Kalo Chamal (black rice) or Rato Chamal (red rice) for low glycemic index. If you have kidney disease, stick to small portions of white rice with protein and vegetables."
+        },
+        "rice4": {
+          "title": "Fluid Restriction and Rice",
+          "content": "Chiura (चिउरा) is perfect for patients with fluid restrictions as it requires minimal water. Soak briefly and consume. Avoid rice porridge or watery rice preparations."
+        },
+        "rice5": {
+          "title": "Rice Cooking Tips for Kidney Patients",
+          "content": "Wash rice thoroughly before cooking to reduce mineral content. Use appropriate water ratios. For CKD patients, cook with extra water and drain excess to reduce potassium by 10-15%."
+        }
+      }
+    },
+    "tarkari-safety": {
+      "title": "Tarkari (Vegetable) Safety Guide for Kidney Patients",
+      "short_title": "Tarkari Safety",
+      "description": "Safe vegetable choices and preparation methods for optimal kidney health",
+      "tips": {
+        "tark1": {
+          "title": "Low-Potassium Safe Vegetables (Daily Use)",
+          "content": "Choose lauka (bottle gourd), pharsi (pumpkin), kakro (cucumber), and jhinge (ridge gourd) for daily consumption. These vegetables are naturally low in potassium and safe for both CKD and dialysis patients."
+        },
+        "tark2": {
+          "title": "Medium-Potassium Vegetables: Double Boiling Required",
+          "content": "Cauliflower, cabbage, green beans, and mustard greens can be consumed safely with proper preparation. Cut small, boil for 5 minutes, discard water completely, then boil again in fresh water."
+        },
+        "tark3": {
+          "title": "High-Potassium Vegetables to Avoid",
+          "content": "Completely avoid or severely limit spinach (palungo), potato (aloo), tomato (golbheda), and broccoli. These contain very high potassium levels that can be dangerous for kidney patients."
+        },
+        "tark4": {
+          "title": "Traditional Nepali Vegetable Preparation",
+          "content": "Modify traditional tarkari preparation by avoiding excess salt, using minimal oil, and incorporating double-boiling for medium potassium vegetables. Replace salt with fresh herbs like ginger, garlic, and coriander."
+        },
+        "tark5": {
+          "title": "Portion Control for Vegetables",
+          "content": "Safe vegetables: 1-2 cups per meal. Medium-risk vegetables (double-boiled): 1/2-3/4 cup per meal. High-risk vegetables: 1/4 cup or less, only occasionally and with special preparation."
+        }
+      }
+    },
+    "achar-safety": {
+      "title": "Achar Safety: Pickle Use in CKD & Dialysis Patients",
+      "short_title": "Achar Safety",
+      "description": "Safe pickle consumption guidelines and traditional condiment modifications for kidney patients",
+      "tips": {
+        "achar1": {
+          "title": "Safe Achar Choices for Daily Use",
+          "content": "Choose fresh herb-based achars like coriander (धनिया) and mint (पुदिना) pickles. These are naturally low in potassium and sodium when prepared with minimal salt. Limit portions to 1-2 teaspoons per meal."
+        },
+        "achar2": {
+          "title": "High-Risk Achars to Completely Avoid",
+          "content": "Completely avoid tomato achar (गोलभेडा अचार), potato pickle (आलु अचार), and gundruk achar (गुन्द्रुक अचार). These contain extremely high levels of potassium and sodium that can be dangerous for kidney patients."
+        },
+        "achar3": {
+          "title": "Portion Control and Preparation Methods",
+          "content": "Even safe achars must be limited to very small portions. Use 1 teaspoon or less per meal. For commercial achars, rinse with water before eating to reduce sodium content."
+        },
+        "achar4": {
+          "title": "Traditional Festival Food Modifications",
+          "content": "During festivals and special occasions, replace traditional high-risk achars with kidney-safe alternatives. Use fresh coriander chutney, mint sauce, or homemade low-salt preparations to maintain cultural food practices safely."
+        },
+        "achar5": {
+          "title": "Understanding Achar Risk Factors",
+          "content": "Learn to identify high-risk ingredients: fermented vegetables increase potassium bioavailability, excess salt causes fluid retention, and high-potassium vegetables like tomatoes can cause dangerous heart rhythm problems."
+        }
+      }
+    }
+  },
+  "categories": {
+    "hyperkalemia": "High Potassium Management",
+    "hyperphosphatemia": "High Phosphorus Control",
+    "combined": "Combined Electrolyte Issues",
+    "protein": "Protein Management",
+    "fluid": "Fluid Management",
+    "nepali_staples": "Nepali Staples",
+    "traditional_meals": "Traditional Meals",
+    "cultural_events": "Cultural Events",
+    "newari_dishes": "Newari Dishes",
+    "vegetable_tips": "Vegetable Tips",
+    "fruit_selection": "Fruit Selection",
+    "protein_sources": "Protein Sources",
+    "sodium_control": "Sodium Control",
+    "meal_planning": "Meal Planning"
+  },
+  "tabs": {
+    "smart_tips": "Smart Tips",
+    "cultural_tips": "Cultural Guide",
+    "tarkari_guide": "Tarkari Guide",
+    "achar_guide": "Achar Guide",
+    "dal_guide": "Dal Guide",
+    "rice_guide": "Rice Guide"
+  }
+}

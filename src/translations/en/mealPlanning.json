@@ -1,0 +1,42 @@
+
+{
+  "title": "Meal Planning",
+  "subtitle": "Plan your daily meals with kidney-safe nutrition guidance",
+  "daily_meal_plan": "Daily Meal Plan",
+  "add_food_to_meal": "Add Food to {meal}",
+  "daily_totals": "Daily Totals",
+  "meal_types": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch", 
+    "dinner": "Dinner",
+    "snacks": "Snacks"
+  },
+  "actions": {
+    "add_food": "Add Food",
+    "edit_food": "Edit Food",
+    "remove_food": "Remove Food",
+    "change_food": "Change Food"
+  },
+  "labels": {
+    "quantity": "Quantity",
+    "unit": "Unit",
+    "calories": "Calories",
+    "protein": "Protein",
+    "potassium": "Potassium",
+    "total": "Total",
+    "no_items_planned": "No items planned",
+    "search_foods": "Search foods...",
+    "select_date": "Select Date"
+  },
+  "messages": {
+    "food_added": "Food added to meal plan",
+    "food_removed": "Food removed from meal plan",
+    "plan_saved": "Meal plan saved",
+    "plan_updated": "Meal plan updated"
+  },
+  "validation": {
+    "quantity_required": "Quantity is required",
+    "quantity_positive": "Quantity must be positive",
+    "food_required": "Please select a food item"
+  }
+}

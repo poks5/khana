@@ -1,0 +1,70 @@
+
+/* Enhanced Nepali text rendering styles */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap');
+
+.font-devanagari {
+  font-family: 'Noto Sans Devanagari', system-ui, sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Better line spacing for Devanagari */
+.nepali-text {
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+}
+
+/* Responsive text sizes for Nepali */
+@media (max-width: 768px) {
+  .font-devanagari {
+    font-size: 1.1em; /* Slightly larger on mobile for readability */
+    line-height: 1.7;
+  }
+}
+
+/* Cultural color scheme for Nepali UI elements */
+.nepali-theme {
+  --nepali-primary: #dc2626; /* Traditional red */
+  --nepali-secondary: #f59e0b; /* Saffron/orange */
+  --nepali-accent: #059669; /* Traditional green */
+  --nepali-text: #1f2937;
+  --nepali-bg: #fef7f0; /* Warm background */
+}
+
+/* Smooth language transition effects */
+.language-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-transition {
+  animation: fadeInOut 0.4s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+/* Better button styles for bilingual content */
+.bilingual-button {
+  min-height: 44px; /* Better touch target */
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Card spacing adjustments for different languages */
+.card-nepali {
+  padding: 1.5rem;
+  border-left: 4px solid var(--nepali-secondary);
+  background: linear-gradient(to right, #fef7f0 0%, transparent 100%);
+}
+
+.card-english {
+  padding: 1.25rem;
+}

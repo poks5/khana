@@ -1,0 +1,77 @@
+
+{
+  "categories": {
+    "all": "सबै खानाहरू",
+    "main-foods-grains": "मुख्य खाना र अन्न",
+    "vegetables": "तरकारीहरू",
+    "proteins-dal": "प्रोटिन र दाल",
+    "fruits": "फलफूलहरू",
+    "beverages-drinks": "पेय पदार्थहरू",
+    "ready-meals": "तयार खाना",
+    "breakfast-snacks": "नास्ता र खाजा",
+    "rice": "चामल र अन्न",
+    "proteins": "प्रोटिनहरू",
+    "dairy": "दुध उत्पादनहरू",
+    "beverages": "पेय पदार्थहरू",
+    "nepali_staples": "नेपाली मुख्य खानाहरू",
+    "nepali_proteins": "नेपाली प्रोटिनहरू",
+    "nepali_dairy": "दुध उत्पादनहरू",
+    "nepali_traditional": "परम्परागत खानाहरू",
+    "vegetable": "तरकारीहरू",
+    "newari_dishes": "नेवारी खानाहरू",
+    "dal-legumes": "दाल र दलहन",
+    "rice-grains": "चामल र अन्न",
+    "processed-foods": "प्रशोधित खाना",
+    "traditional-foods": "परम्परागत खाना",
+    "breakfast-cereals": "नास्ताको अनाज",
+    "breakfast-bread": "नास्ताको रोटी",
+    "breakfast-proteins": "नास्ताको प्रोटिन",
+    "breakfast-beverages": "नास्ताको पेय",
+    "quick-meals": "छिटो खाना",
+    "traditional-breakfast": "परम्परागत नास्ता",
+    "meal-templates": "खाना टेम्प्लेट"
+  },
+  "safety": {
+    "safe": "सुरक्षित",
+    "limited": "सीमित",
+    "avoid": "नखानुहोस्",
+    "dialysis_safe": "डायलासिस सुरक्षित",
+    "preparation_required": "तयारी आवश्यक",
+    "low_potassium": "कम पोटासियम",
+    "low_phosphorus": "कम फस्फोरस",
+    "low_sodium": "कम नुन"
+  },
+  "tracker": {
+    "title": "आफ्नो खाना ट्र्याक गर्नुहोस्",
+    "add_food": "खाना थप्नुहोस्",
+    "choose_food": "खाना छान्नुहोस्",
+    "select_portion": "भाग छान्नुहोस्",
+    "daily_log": "दैनिक खाना लग",
+    "quick_add": "छिटो थप्नुहोस्",
+    "meal_templates": "खाना टेम्प्लेट",
+    "new_food": "नयाँ खाना थप्नुहोस्",
+    "select_category": "खाना कोटी छान्नुहोस्",
+    "select_food_item": "खाना वस्तु छान्नुहोस्"
+  },
+  "portions": {
+    "half": "आधा",
+    "one": "१",
+    "one_half": "१.५",
+    "two": "२",
+    "three": "३",
+    "how_much": "कति?"
+  },
+  "meals": {
+    "breakfast": "बिहानको खाना",
+    "lunch": "दिउँसोको खाना",
+    "dinner": "बेलुकीको खाना",
+    "snack": "खाजा",
+    "which_meal": "कुन खाना?"
+  },
+  "search": {
+    "placeholder": "अंग्रेजी वा नेपालीमा खानाहरू खोज्नुहोस्...",
+    "no_results": "तपाईंको खोजसँग मिल्ने कुनै खाना फेला परेन।",
+    "try_different": "फरक शब्दहरूसँग खोज्ने प्रयास गर्नुहोस् वा सबै कोटीहरू हेर्नुहोस्।",
+    "foods_found": "खानाहरू उपलब्ध"
+  }
+}

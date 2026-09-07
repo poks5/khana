@@ -1,0 +1,6 @@
+{
+  "name": "Khana-Sathi",
+  "description": "Nepali CKD & Dialysis Nutrition Compass and food tracker",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

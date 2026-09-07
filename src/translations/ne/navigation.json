@@ -1,0 +1,21 @@
+
+{
+  "tabs": {
+    "tracker": "ट्र्याकर",
+    "planner": "योजनाकर्ता",
+    "clinical": "क्लिनिकल",
+    "more": "थप",
+    "recommendations": "सुझाव र सिफारिसहरू",
+    "recipes": "व्यञ्जनहरू",
+    "database": "खाना डाटाबेस",
+    "ai_chat": "AI च्याट",
+    "reports": "रगत रिपोर्टहरू",
+    "summary": "दैनिक सारांश",
+    "analytics": "उन्नत विश्लेषण"
+  },
+  "tracker": "खाना ट्र्याकर",
+  "planner": "खाना योजनाकर्ता",
+  "reports": "रिपोर्टहरू",
+  "recommendations": "सिफारिसहरू",
+  "database": "खाना डाटाबेस"
+}

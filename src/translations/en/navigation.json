@@ -1,0 +1,21 @@
+
+{
+  "tabs": {
+    "tracker": "Tracker",
+    "planner": "Planner", 
+    "clinical": "Clinical",
+    "more": "More",
+    "recommendations": "Tips & Recommendations",
+    "recipes": "Recipes",
+    "database": "Foods Database",
+    "ai_chat": "AI Chat",
+    "reports": "Blood Reports",
+    "summary": "Daily Summary",
+    "analytics": "Advanced Analytics"
+  },
+  "tracker": "Food Tracker",
+  "planner": "Meal Planner",
+  "reports": "Reports",
+  "recommendations": "Recommendations",
+  "database": "Food Database"
+}

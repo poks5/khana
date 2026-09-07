@@ -1,0 +1,310 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './styles/nepali-text.css';
+
+/* Modern Medical Design System */
+@layer base {
+  :root {
+    /* Gen-Z Glassmorphism palette - soft pastel base */
+    --background: 240 60% 98%;
+    --foreground: 240 25% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 25% 18%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 25% 15%;
+    --primary: 262 83% 65%; /* Vibrant purple */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 200 95% 92%;
+    --secondary-foreground: 240 25% 20%;
+    --muted: 240 30% 96%;
+    --muted-foreground: 240 10% 50%;
+    --accent: 174 72% 56%; /* Mint teal */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 350 89% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 35 95% 60%;
+    --warning-foreground: 35 90% 15%;
+    --border: 240 30% 90%;
+    --input: 240 30% 96%;
+    --ring: 262 83% 65%;
+    --radius: 16px;
+
+    --medical-safe: 152 70% 50%;
+    --medical-caution: 35 95% 60%;
+    --medical-avoid: 350 89% 60%;
+    --medical-info: 218 92% 65%;
+    --medical-success: 152 70% 50%;
+
+    /* Gen-Z aurora gradient mesh */
+    --aurora-1: 262 83% 75%;
+    --aurora-2: 200 95% 75%;
+    --aurora-3: 174 72% 70%;
+    --aurora-4: 330 85% 78%;
+    --gradient-mesh: radial-gradient(at 20% 10%, hsl(var(--aurora-1) / 0.45) 0px, transparent 50%),
+                     radial-gradient(at 85% 15%, hsl(var(--aurora-2) / 0.45) 0px, transparent 50%),
+                     radial-gradient(at 70% 85%, hsl(var(--aurora-3) / 0.4) 0px, transparent 50%),
+                     radial-gradient(at 15% 90%, hsl(var(--aurora-4) / 0.4) 0px, transparent 50%);
+  }
+
+  .dark {
+    --background: 215 28% 9%; /* Dark medical background */
+    --foreground: 213 27% 92%; /* Light text */
+    --card: 215 28% 12%; /* Dark cards */
+    --card-foreground: 213 27% 88%; /* Light card text */
+    --popover: 215 28% 12%;
+    --popover-foreground: 213 27% 88%;
+    --primary: 213 94% 76%; /* Lighter blue for dark mode */
+    --primary-foreground: 215 28% 9%;
+    --secondary: 215 28% 15%; /* Dark secondary */
+    --secondary-foreground: 213 27% 88%;
+    --muted: 215 28% 15%; /* Dark muted */
+    --muted-foreground: 213 13% 65%; /* Muted text */
+    --accent: 142 76% 42%; /* Brighter green for dark */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 68%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 43 96% 64%;
+    --warning-foreground: 215 28% 9%;
+    --border: 215 28% 18%; /* Dark borders */
+    --input: 215 28% 15%;
+    --ring: 213 94% 76%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', 'Noto Sans Devanagari', system-ui, sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.011em;
+  }
+
+  /* Enhanced Nepali text rendering */
+  [lang="ne"], .nepali-text {
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+    line-height: 1.7;
+  }
+}
+
+/* Modern Medical UI Components */
+@layer components {
+  /* Clean Modern Medical Cards */
+  .medical-card {
+    @apply bg-card rounded-xl shadow-sm border border-border/40;
+    @apply transition-all duration-300 hover:shadow-md hover:border-border/60;
+    @apply backdrop-blur-sm;
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--card)/0.95));
+  }
+
+  /* Modern Medical Buttons */
+  .medical-button {
+    @apply min-h-[48px] min-w-[48px] rounded-lg font-medium;
+    @apply transition-all duration-300 active:scale-95;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    @apply shadow-sm hover:shadow-md;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90;
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)/0.9));
+  }
+
+  /* Enhanced Medical Status Badges */
+  .badge-safe {
+    @apply bg-green-50 text-green-700 border border-green-200/60;
+    @apply dark:bg-green-900/20 dark:text-green-300 dark:border-green-800/60;
+    @apply shadow-sm;
+  }
+
+  .badge-caution {
+    @apply bg-amber-50 text-amber-700 border border-amber-200/60;
+    @apply dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-800/60;
+    @apply shadow-sm;
+  }
+
+  .badge-avoid {
+    @apply bg-red-50 text-red-700 border border-red-200/60;
+    @apply dark:bg-red-900/20 dark:text-red-300 dark:border-red-800/60;
+    @apply shadow-sm;
+  }
+
+  /* Modern Input Fields */
+  .medical-input {
+    @apply h-12 rounded-lg border border-border/60 bg-input/50;
+    @apply focus:border-primary focus:ring-2 focus:ring-primary/20 focus:outline-none;
+    @apply transition-all duration-300 backdrop-blur-sm;
+    @apply text-base placeholder:text-muted-foreground/70;
+  }
+
+  /* Enhanced Floating Action Button */
+  .medical-fab {
+    @apply fixed z-50 h-14 w-14 rounded-full;
+    @apply bg-primary text-primary-foreground shadow-lg;
+    @apply transition-all duration-300 hover:scale-105 active:scale-95;
+    @apply focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2;
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)/0.8));
+  }
+
+  /* Modern Bottom Navigation */
+  .bottom-nav {
+    @apply fixed bottom-0 left-0 right-0 z-40;
+    @apply bg-card/95 backdrop-blur-lg border-t border-border/50;
+    @apply shadow-2xl;
+    background: linear-gradient(180deg, hsl(var(--card)/0.95), hsl(var(--card)/0.98));
+  }
+
+  /* Enhanced Header Design */
+  .medical-header {
+    @apply sticky top-0 z-50 bg-card/95 backdrop-blur-lg;
+    @apply border-b border-border/40 shadow-sm;
+    background: linear-gradient(180deg, hsl(var(--card)/0.98), hsl(var(--card)/0.95));
+  }
+
+  /* Modern Dropdown Menus - Fixed transparency */
+  .dropdown-content {
+    @apply bg-popover/98 backdrop-blur-lg border border-border/60;
+    @apply shadow-lg rounded-lg z-50;
+    background: linear-gradient(145deg, hsl(var(--popover)/0.98), hsl(var(--popover)/0.95));
+  }
+}
+
+/* Enhanced Responsive Design */
+@layer utilities {
+  /* Modern Typography Scale */
+  .text-mobile-xs { @apply text-xs leading-4 tracking-wide; }
+  .text-mobile-sm { @apply text-sm leading-5 tracking-normal; }
+  .text-mobile-base { @apply text-base leading-6 tracking-normal; }
+  .text-mobile-lg { @apply text-lg leading-7 tracking-tight; }
+  .text-mobile-xl { @apply text-xl leading-8 tracking-tight; }
+  .text-mobile-2xl { @apply text-2xl leading-9 tracking-tight; }
+
+  /* Large Font Mode Enhancement */
+  .large-font .text-mobile-xs { @apply text-sm; }
+  .large-font .text-mobile-sm { @apply text-base; }
+  .large-font .text-mobile-base { @apply text-lg; }
+  .large-font .text-mobile-lg { @apply text-xl; }
+  .large-font .text-mobile-xl { @apply text-2xl; }
+  .large-font .text-mobile-2xl { @apply text-3xl; }
+
+  /* Enhanced Touch Targets */
+  .touch-target {
+    @apply min-h-[48px] min-w-[48px] touch-manipulation;
+  }
+
+  /* Safe Area Support */
+  .safe-area-inset {
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+
+  /* Smooth Modern Transitions */
+  .smooth-transition {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Gen-Z Glass Morphism */
+  .glass-effect {
+    @apply backdrop-blur-xl bg-white/40 dark:bg-white/5 border border-white/50 dark:border-white/10;
+    box-shadow: 0 8px 32px 0 hsl(var(--primary) / 0.08), inset 0 1px 0 0 hsl(0 0% 100% / 0.6);
+  }
+  .glass-card {
+    @apply backdrop-blur-2xl bg-white/55 dark:bg-white/[0.06] border border-white/60 dark:border-white/10 rounded-3xl;
+    box-shadow: 0 8px 32px -4px hsl(var(--primary) / 0.12), inset 0 1px 0 0 hsl(0 0% 100% / 0.7);
+  }
+  .glass-pill {
+    @apply backdrop-blur-xl bg-white/60 dark:bg-white/10 border border-white/70 dark:border-white/15 rounded-full;
+  }
+  .aurora-bg {
+    background-color: hsl(var(--background));
+    background-image: var(--gradient-mesh);
+  }
+
+  /* Modern Gradient Backgrounds */
+  .gradient-primary {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary)/0.8));
+  }
+
+  .gradient-card {
+    background: linear-gradient(145deg, hsl(var(--card)), hsl(var(--card)/0.95));
+  }
+
+  /* Container Spacing Enhancement */
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Card Spacing Enhancement */
+  .card-spacing {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  /* Medical Grid System */
+  .medical-grid {
+    @apply grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+}
+
+/* Enhanced Mobile Optimizations */
+@media (max-width: 768px) {
+  button, [role="button"] {
+    @apply min-h-[48px] min-w-[48px];
+    touch-action: manipulation;
+  }
+
+  button:active, [role="button"]:active {
+    transform: scale(0.96);
+    transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  input, textarea, select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    @apply min-h-[48px] rounded-lg;
+  }
+
+  /* Performance optimizations */
+  * {
+    animation-duration: 0.2s !important;
+    transition-duration: 0.2s !important;
+  }
+}
+
+/* Enhanced Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High Contrast Mode Enhancement */
+@media (prefers-contrast: high) {
+  .medical-card {
+    @apply border-2 border-foreground/30;
+  }
+  
+  .medical-button {
+    @apply border-2 border-current;
+  }
+
+  .dropdown-content {
+    @apply border-2 border-foreground/30;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .medical-fab, .bottom-nav, .print-hidden {
+    @apply hidden;
+  }
+  
+  .medical-card {
+    @apply shadow-none border border-foreground/20;
+  }
+}

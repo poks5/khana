@@ -1,0 +1,13 @@
+
+{
+  "required": "This field is required",
+  "invalid_email": "Please enter a valid email address",
+  "password_min_length": "Password must be at least 8 characters",
+  "passwords_not_match": "Passwords do not match",
+  "invalid_number": "Please enter a valid number",
+  "min_value": "Value must be at least {min}",
+  "max_value": "Value must not exceed {max}",
+  "invalid_date": "Please enter a valid date",
+  "future_date_required": "Date must be in the future",
+  "past_date_required": "Date must be in the past"
+}

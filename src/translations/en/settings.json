@@ -1,0 +1,21 @@
+
+{
+  "title": "Settings",
+  "account_data": "Account & Data",
+  "account_data_desc": "Manage how your data is stored and accessed",
+  "medical_disclaimer": "Medical Disclaimer",
+  "app_developer": "App Developer",
+  "app_info": "App Information",
+  "language_settings": "Language Settings",
+  "language_desc": "Choose your preferred language for the app interface",
+  "select_language": "Select Language",
+  "medical_disclaimer_content": {
+    "important": "Important: This app is for educational purposes only and is not a substitute for professional medical advice.",
+    "point1": "The information provided by this app is for general nutritional guidance only and is not personalized medical advice.",
+    "point2": "Always consult with your nephrologist or registered dietitian before making any dietary changes.",
+    "point3": "The food recommendations in this app may not be suitable for all individuals and may vary based on your specific health condition.",
+    "point4": "In case of emergency, immediately contact your healthcare provider or emergency services. This app is not a substitute for emergency care.",
+    "point5": "The developers are not responsible for any adverse outcomes resulting from the use of this app.",
+    "acknowledgment": "By using this app, you acknowledge and accept all these terms and limitations."
+  }
+}

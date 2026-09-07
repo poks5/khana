@@ -1,0 +1,235 @@
+
+import jsPDF from 'jspdf';
+import { ClinicalExport, MedicationEntry, CarePlanTemplate } from '@/types/clinical';
+import { BloodReport } from '@/types';
+
+export const exportClinicalDataForProvider = async (
+  exportData: ClinicalExport,
+  format: 'pdf' | 'csv' | 'json' = 'pdf'
+): Promise<void> => {
+  switch (format) {
+    case 'pdf':
+      await exportToPDF(exportData);
+      break;
+    case 'csv':
+      exportToCSV(exportData);
+      break;
+    case 'json':
+      exportToJSON(exportData);
+      break;
+    default:
+      throw new Error(`Unsupported export format: ${format}`);
+  }
+};
+
+const exportToPDF = async (data: ClinicalExport): Promise<void> => {
+  const pdf = new jsPDF();
+  const pageWidth = pdf.internal.pageSize.getWidth();
+  const pageHeight = pdf.internal.pageSize.getHeight();
+  let yPosition = 20;
+
+  // Header
+  pdf.setFontSize(18);
+  pdf.text('Clinical Nutrition Report', pageWidth / 2, yPosition, { align: 'center' });
+  yPosition += 20;
+
+  // Patient Information
+  pdf.setFontSize(14);
+  pdf.text('Patient Information', 20, yPosition);
+  yPosition += 10;
+
+  pdf.setFontSize(10);
+  pdf.text(`Export Date: ${new Date(data.patientInfo.exportDate).toLocaleDateString()}`, 20, yPosition);
+  yPosition += 6;
+  pdf.text(`Dialysis Type: ${data.patientInfo.dialysisType}`, 20, yPosition);
+  yPosition += 6;
+  if (data.patientInfo.age) {
+    pdf.text(`Age: ${data.patientInfo.age}`, 20, yPosition);
+    yPosition += 10;
+  }
+
+  // Nutrition Summary
+  if (data.nutritionData) {
+    pdf.setFontSize(14);
+    pdf.text('Nutrition Summary', 20, yPosition);
+    yPosition += 10;
+
+    pdf.setFontSize(10);
+    if (data.nutritionData.dailyAverages) {
+      Object.entries(data.nutritionData.dailyAverages).forEach(([key, value]) => {
+        pdf.text(`Average ${key}: ${value}`, 20, yPosition);
+        yPosition += 6;
+      });
+    }
+    yPosition += 5;
+  }
+
+  // Lab Results Summary
+  if (data.labResults && data.labResults.length > 0) {
+    if (yPosition > pageHeight - 50) {
+      pdf.addPage();
+      yPosition = 20;
+    }
+
+    pdf.setFontSize(14);
+    pdf.text('Recent Lab Results', 20, yPosition);
+    yPosition += 10;
+
+    const recentLab = data.labResults[0];
+    pdf.setFontSize(10);
+    pdf.text(`Date: ${new Date(recentLab.date).toLocaleDateString()}`, 20, yPosition);
+    yPosition += 8;
+
+    Object.entries(recentLab.preHD).forEach(([key, value]) => {
+      if (value !== undefined) {
+        pdf.text(`${key}: ${value}`, 20, yPosition);
+        yPosition += 6;
+      }
+    });
+    yPosition += 5;
+  }
+
+  // Medications
+  if (data.medications && data.medications.length > 0) {
+    if (yPosition > pageHeight - 50) {
+      pdf.addPage();
+      yPosition = 20;
+    }
+
+    pdf.setFontSize(14);
+    pdf.text('Current Medications', 20, yPosition);
+    yPosition += 10;
+
+    pdf.setFontSize(10);
+    data.medications.forEach((med) => {
+      if (yPosition > pageHeight - 30) {
+        pdf.addPage();
+        yPosition = 20;
+      }
+
+      pdf.text(`• ${med.name} - ${med.dosage}`, 20, yPosition);
+      yPosition += 6;
+      pdf.text(`  Frequency: ${med.frequency}, Timing: ${med.timing}`, 25, yPosition);
+      yPosition += 6;
+      if (med.foodInteractions && med.foodInteractions.length > 0) {
+        pdf.text(`  Food Interactions: ${med.foodInteractions.join(', ')}`, 25, yPosition);
+        yPosition += 6;
+      }
+      yPosition += 3;
+    });
+  }
+
+  // Care Plan
+  if (data.carePlan) {
+    if (yPosition > pageHeight - 50) {
+      pdf.addPage();
+      yPosition = 20;
+    }
+
+    pdf.setFontSize(14);
+    pdf.text('Care Plan', 20, yPosition);
+    yPosition += 10;
+
+    pdf.setFontSize(12);
+    pdf.text(data.carePlan.name, 20, yPosition);
+    yPosition += 8;
+
+    pdf.setFontSize(10);
+    const descLines = pdf.splitTextToSize(data.carePlan.description, pageWidth - 40);
+    pdf.text(descLines, 20, yPosition);
+    yPosition += descLines.length * 6 + 10;
+
+    // Goals
+    if (data.carePlan.goals.length > 0) {
+      pdf.text('Goals:', 20, yPosition);
+      yPosition += 6;
+
+      data.carePlan.goals.forEach((goal, index) => {
+        if (yPosition > pageHeight - 30) {
+          pdf.addPage();
+          yPosition = 20;
+        }
+        pdf.text(`${index + 1}. ${goal.title} (${goal.priority} priority)`, 25, yPosition);
+        yPosition += 6;
+      });
+    }
+  }
+
+  // Recommendations
+  if (data.recommendations && data.recommendations.length > 0) {
+    if (yPosition > pageHeight - 50) {
+      pdf.addPage();
+      yPosition = 20;
+    }
+
+    pdf.setFontSize(14);
+    pdf.text('Clinical Recommendations', 20, yPosition);
+    yPosition += 10;
+
+    pdf.setFontSize(10);
+    data.recommendations.forEach((rec, index) => {
+      if (yPosition > pageHeight - 30) {
+        pdf.addPage();
+        yPosition = 20;
+      }
+      pdf.text(`${index + 1}. ${rec.title || rec.description}`, 20, yPosition);
+      yPosition += 6;
+    });
+  }
+
+  // Footer
+  const timestamp = new Date().toLocaleString();
+  pdf.setFontSize(8);
+  pdf.text(`Generated by Khana-Sathi on ${timestamp}`, 20, pageHeight - 10);
+  pdf.text('For healthcare provider use only', pageWidth / 2, pageHeight - 10, { align: 'center' });
+
+  pdf.save(`clinical-report-${data.patientInfo.exportDate}.pdf`);
+};
+
+const exportToCSV = (data: ClinicalExport): void => {
+  // Create CSV content for nutrition data, lab results, and medications
+  let csvContent = "data:text/csv;charset=utf-8,";
+  
+  // Add headers
+  csvContent += "Type,Date,Parameter,Value,Unit,Notes\n";
+  
+  // Add nutrition data
+  if (data.nutritionData?.dailyAverages) {
+    Object.entries(data.nutritionData.dailyAverages).forEach(([key, value]) => {
+      csvContent += `Nutrition,${data.patientInfo.exportDate},${key},${value},,Daily Average\n`;
+    });
+  }
+  
+  // Add lab results
+  data.labResults?.forEach(lab => {
+    Object.entries(lab.preHD).forEach(([key, value]) => {
+      if (value !== undefined) {
+        csvContent += `Lab,${lab.date},${key},${value},,Pre-dialysis\n`;
+      }
+    });
+  });
+  
+  // Add medications
+  data.medications?.forEach(med => {
+    csvContent += `Medication,${med.startDate},${med.name},${med.dosage},${med.frequency},${med.timing}\n`;
+  });
+
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement("a");
+  link.setAttribute("href", encodedUri);
+  link.setAttribute("download", `clinical-data-${data.patientInfo.exportDate}.csv`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+const exportToJSON = (data: ClinicalExport): void => {
+  const dataStr = JSON.stringify(data, null, 2);
+  const dataBlob = new Blob([dataStr], { type: 'application/json' });
+  const url = URL.createObjectURL(dataBlob);
+  const link = document.createElement('a');
+  link.href = url;
+  link.download = `clinical-data-${data.patientInfo.exportDate}.json`;
+  link.click();
+  URL.revokeObjectURL(url);
+};

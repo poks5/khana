@@ -1,0 +1,49 @@
+
+{
+  "welcome": {
+    "title": "Welcome to Khana-Sathi",
+    "subtitle": "Your comprehensive dialysis nutrition companion",
+    "description": "We're here to help you manage your nutrition safely and effectively during your dialysis journey.",
+    "features": {
+      "medically_safe": "Medically Safe",
+      "nepali_foods": "Nepali Foods"
+    }
+  },
+  "medical_disclaimer": {
+    "title": "Important Medical Disclaimer",
+    "subtitle": "Please read carefully before proceeding",
+    "key_points": {
+      "educational_only": "This app is for educational purposes only and is not a substitute for professional medical advice",
+      "consult_doctor": "Always consult your nephrologist or dietitian before making dietary changes",
+      "individual_needs": "Food recommendations may vary based on your specific health condition",
+      "emergency_contact": "In emergencies, contact your healthcare provider immediately"
+    },
+    "acknowledgment": "I understand and accept these terms",
+    "view_full": "View Full Medical Disclaimer",
+    "must_accept": "You must accept the medical disclaimer to continue"
+  },
+  "steps": {
+    "tracker": {
+      "title": "Food Tracker",
+      "subtitle": "Monitor your daily nutrition intake"
+    },
+    "planner": {
+      "title": "Meal Planner", 
+      "subtitle": "Plan your meals with personalized guidance"
+    },
+    "ai_assistant": {
+      "title": "AI Assistant",
+      "subtitle": "Get instant nutrition guidance"
+    },
+    "safety": {
+      "title": "Safety Guidelines",
+      "subtitle": "Important reminders for safe usage"
+    }
+  },
+  "navigation": {
+    "skip": "Skip",
+    "previous": "Previous",
+    "next": "Next",
+    "get_started": "Get Started"
+  }
+}

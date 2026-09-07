@@ -1,0 +1,42 @@
+
+{
+  "title": "खाना योजना",
+  "subtitle": "मिर्गौला-सुरक्षित पोषण निर्देशनका साथ आफ्नो दैनिक खाना योजना बनाउनुहोस्",
+  "daily_meal_plan": "दैनिक खाना योजना",
+  "add_food_to_meal": "{meal} मा खाना थप्नुहोस्",
+  "daily_totals": "दैनिक जम्मा",
+  "meal_types": {
+    "breakfast": "बिहानको खाना",
+    "lunch": "दिउँसोको खाना",
+    "dinner": "बेलुकीको खाना", 
+    "snacks": "खाजा"
+  },
+  "actions": {
+    "add_food": "खाना थप्नुहोस्",
+    "edit_food": "खाना सम्पादन गर्नुहोस्",
+    "remove_food": "खाना हटाउनुहोस्",
+    "change_food": "खाना परिवर्तन गर्नुहोस्"
+  },
+  "labels": {
+    "quantity": "मात्रा",
+    "unit": "एकाइ",
+    "calories": "क्यालोरी",
+    "protein": "प्रोटिन",
+    "potassium": "पोटासियम",
+    "total": "जम्मा",
+    "no_items_planned": "कुनै वस्तु योजना गरिएको छैन",
+    "search_foods": "खानाहरू खोज्नुहोस्...",
+    "select_date": "मिति छान्नुहोस्"
+  },
+  "messages": {
+    "food_added": "खाना योजनामा थपियो",
+    "food_removed": "खाना योजनाबाट हटाइयो",
+    "plan_saved": "खाना योजना सेभ भयो",
+    "plan_updated": "खाना योजना अपडेट भयो"
+  },
+  "validation": {
+    "quantity_required": "मात्रा आवश्यक छ",
+    "quantity_positive": "मात्रा सकारात्मक हुनुपर्छ",
+    "food_required": "कृपया खाना वस्तु छान्नुहोस्"
+  }
+}

@@ -1,0 +1,35 @@
+
+{
+  "today": "आज",
+  "yesterday": "हिजो",
+  "tomorrow": "भोली",
+  "this_week": "यो हप्ता",
+  "last_week": "गत हप्ता", 
+  "next_week": "अर्को हप्ता",
+  "this_month": "यो महिना",
+  "last_month": "गत महिना",
+  "next_month": "अर्को महिना",
+  "days": {
+    "sunday": "आइतबार",
+    "monday": "सोमबार",
+    "tuesday": "मंगलबार", 
+    "wednesday": "बुधबार",
+    "thursday": "बिहिबार",
+    "friday": "शुक्रबार",
+    "saturday": "शनिबार"
+  },
+  "months": {
+    "january": "जनवरी",
+    "february": "फेब्रुअरी",
+    "march": "मार्च",
+    "april": "अप्रिल",
+    "may": "मे",
+    "june": "जुन",
+    "july": "जुलाई",
+    "august": "अगस्त",
+    "september": "सेप्टेम्बर",
+    "october": "अक्टोबर",
+    "november": "नोभेम्बर",
+    "december": "डिसेम्बर"
+  }
+}

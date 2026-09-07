@@ -1,0 +1,77 @@
+
+{
+  "categories": {
+    "all": "All Foods",
+    "main-foods-grains": "Main Foods & Grains",
+    "vegetables": "Vegetables",
+    "proteins-dal": "Proteins & Dal",
+    "fruits": "Fruits",
+    "beverages-drinks": "Beverages & Drinks",
+    "ready-meals": "Ready Meals",
+    "breakfast-snacks": "Breakfast & Snacks",
+    "rice": "Rice & Grains",
+    "proteins": "Proteins",
+    "dairy": "Dairy Products",
+    "beverages": "Beverages",
+    "nepali_staples": "Nepali Staples",
+    "nepali_proteins": "Nepali Proteins",
+    "nepali_dairy": "Dairy Products",
+    "nepali_traditional": "Traditional Foods",
+    "vegetable": "Vegetables",
+    "newari_dishes": "Newari Dishes",
+    "dal-legumes": "Dal & Legumes",
+    "rice-grains": "Rice & Grains",
+    "processed-foods": "Processed Foods",
+    "traditional-foods": "Traditional Foods",
+    "breakfast-cereals": "Breakfast Cereals",
+    "breakfast-bread": "Breakfast Breads",
+    "breakfast-proteins": "Breakfast Proteins",
+    "breakfast-beverages": "Breakfast Beverages",
+    "quick-meals": "Quick Meals",
+    "traditional-breakfast": "Traditional Breakfast",
+    "meal-templates": "Meal Templates"
+  },
+  "safety": {
+    "safe": "Safe",
+    "limited": "Limited",
+    "avoid": "Avoid",
+    "dialysis_safe": "Dialysis Safe",
+    "preparation_required": "Preparation Required",
+    "low_potassium": "Low Potassium",
+    "low_phosphorus": "Low Phosphorus",
+    "low_sodium": "Low Sodium"
+  },
+  "tracker": {
+    "title": "Track Your Food",
+    "add_food": "Add Food",
+    "choose_food": "Choose Food",
+    "select_portion": "Select Portion",
+    "daily_log": "Daily Food Log",
+    "quick_add": "Quick Add",
+    "meal_templates": "Meal Templates",
+    "new_food": "Add New Food",
+    "select_category": "Select Food Category",
+    "select_food_item": "Select Food Item"
+  },
+  "portions": {
+    "half": "Half",
+    "one": "1",
+    "one_half": "1.5",
+    "two": "2",
+    "three": "3",
+    "how_much": "How much?"
+  },
+  "meals": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snack",
+    "which_meal": "Which meal?"
+  },
+  "search": {
+    "placeholder": "Search foods in English or Nepali...",
+    "no_results": "No foods found matching your search.",
+    "try_different": "Try searching with different terms or browse all categories.",
+    "foods_found": "foods available"
+  }
+}
